@@ -1,0 +1,166 @@
+/* General Page Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: #fff;
+    max-width: 450px;
+    width: 100%;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e1e1e1;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.03);
+}
+
+/* Form Title Styling */
+form h2 {
+    font-size: 1.7em;
+    margin-bottom: 1.5em;
+    color: #ff7e5f;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styling for Labels */
+label {
+    display: block;
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="radio"] {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #feb47b;
+    box-shadow: 0 0 8px rgba(255, 123, 95, 0.4);
+    outline: none;
+}
+
+/* Checkbox Section Styling */
+#zipcodeSection {
+    margin-bottom: 1.5em;
+}
+
+/* Password Input */
+input[type="password"] {
+    font-family: 'Courier New', monospace;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-2px);
+}
+
+/* Form Messages (Errors/Accepted) */
+#formMessages {
+    margin-top: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#formMessages p {
+    padding: 0.8em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+}
+
+#formMessages p:first-child {
+    color: #2e7d32;
+    background-color: #e8f5e9;
+}
+
+#formMessages p:nth-child(n+2) {
+    color: #d32f2f;
+    background-color: #ffebee;
+}
+
+/* Pizza Option Styling */
+p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+label[for="pizza"] {
+    margin-right: 1em;
+    color: #ff7e5f;
+    font-size: 1.1em;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5em;
+}
+
+/* Adjustments for Radio Inputs */
+.radio-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+        padding: 0.7em;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 0.8em;
+        font-size: 1em;
+    }
+}

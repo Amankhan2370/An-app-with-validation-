@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Registration Form</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <form id="pizzaForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="3">
+
+        <label for="birthYear">Year of Birth:</label>
+        <input type="number" id="birthYear" name="birthYear" required min="1901" max="2024">
+
+        <label>
+            <input type="checkbox" id="usResident" name="usResident"> Do you live in the United States?
+        </label>
+
+        <div id="zipcodeSection" style="display:none;">
+            <label for="zipcode">Zipcode:</label>
+            <input type="number" id="zipcode" name="zipcode" pattern="\d{5}">
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <p>Preferred type of pizza:</p>
+        <label>
+            <input type="radio" name="pizza" value="With pineapple" required> With pineapple
+        </label>
+        <label>
+            <input type="radio" name="pizza" value="Without pineapple" required> Without pineapple
+        </label>
+        <label>
+            <input type="radio" name="pizza" value="I do not like pizza" required> I do not like pizza
+        </label>
+
+        <button type="submit">Submit</button>
+
+        <div id="formMessages"></div>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>
